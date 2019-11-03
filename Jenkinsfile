@@ -8,7 +8,7 @@ pipeline{
 
             steps {
 
-                withMaven(maven: 'maven-3.3.3') {
+                withMaven(maven: 'maven') {
                     sh 'mvn clean install'
 
                 }
@@ -19,7 +19,7 @@ pipeline{
 
             steps {
 
-                withMaven(maven: 'maven-3.3.3') {
+                withMaven(maven: 'maven') {
                     sh 'mvn test'
 
                 }
